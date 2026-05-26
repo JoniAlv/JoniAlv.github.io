@@ -3230,3 +3230,26 @@ input, select, textarea {
 .work-item img:hover {
     transform: scale(1.03);
 }
+
+.image.thumb:before {
+    display: none !important;
+}
+
+.image.thumb:after {
+    display: none !important;
+}
+
+.work-item img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.work-item {
+    transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-5px);
+}
