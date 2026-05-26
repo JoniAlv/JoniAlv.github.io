@@ -3218,38 +3218,34 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-	}
+/* PROJECT CARDS */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
 
+/* IMAGES */
 .work-item img {
-    height: 250px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s ease;
+    border-radius: 14px;
+    display: block;
 }
 
-.work-item img:hover {
-    transform: scale(1.03);
-}
-
-.image.thumb:before {
-    display: none !important;
-}
-
+/* REMOVE STRATA OVERLAY */
+.image.thumb:before,
 .image.thumb:after {
     display: none !important;
 }
 
-.work-item img {
-    height: 220px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
+/* CLEAN CARD STYLE */
+.work-item h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
 }
 
-.work-item {
-    transition: transform 0.3s ease;
-}
-
-.work-item:hover {
-    transform: translateY(-5px);
+.work-item p {
+    margin-bottom: 0;
 }
